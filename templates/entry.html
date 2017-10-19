@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{ the_tittle }}</h2>
+    <form action="/calculate/" method="post">
+       <table>
+       <p>Use thes form to submit the data to calculate the area of cubo</p>
+       <tr>
+           <td>a:</td>
+           <td><input type="number" name="D"></td>
+
+       </tr>
+       <tr>
+           <td>b:</td>
+           <td><input type="number" name="d"></td>
+
+       </tr>
+       </table>
+    <p>When you're ready, click this button</p>
+    <input type="submit" name="btn_calculate" value="Calculate!" /></p>
+    </form>
+{% endblock %}
